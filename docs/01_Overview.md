@@ -6,7 +6,7 @@
 - **Checkmk** là một phần của **OMD**
 - Trang chủ : https://omdistro.org/
 
-    <img src=https://i.imgur.com/maEveIt.png>
+    <p align=center><img src=https://i.imgur.com/maEveIt.png width=70%></p>
 ## **2) Lịch sử hình thành của OMD - Checkmk**
 - Dự án **Check_MK** được phát triển từ năm `2008` như là một plugin của **Nagios Core**.
 - Năm `2010` dự án **OMD** (**Open Monitoring Distribution**) được khởi động bởi **Mathias Kettner**, là sự kết hợp của **Nagios**, **Check_MK**, **NagVis**, **PNP4Nagios**, **DocuWiki**, ... tạo nên sự linh hoạt trong giám sát. Các distro của **OMD** hiện tại đang là **OMD-LABS** và **CHECK_MK RAW**. Trong đó :
@@ -21,7 +21,7 @@
     - **Checkmk Enterprise - Managed Services Edition** dựa trên Enterprise - Standard Edition và cung cấp thêm các tính năng đặc biệt nhắm vào các công ty muốn cung cấp Checkmk dưới dạng dịch vụ được quản lý .
 
 
-<img src=https://i.imgur.com/QnP6nVa.png>
+<p align=center><img src=https://i.imgur.com/QnP6nVa.png width=80%></p>
 
 ## **3) Các tính năng nổi bật của Checkmk**
 - Giám sát toàn diện :

@@ -3,10 +3,13 @@
 - **OMD - Open Monitoring Distribution** là một project được phát triển từ năm `2010` bới **Mathias Kettner**. 
 - **OMD** sử dụng nhân là **Nagios Core**, kết hợp với các phần mềm mã nguồn mở khác để đóng gói thành một sản phẩm phục vụ cho nhu cầu giám sát, cảnh báo và hiển thị .
 - **OMD (checkmk)** cung cấp các hình thức cảnh báo (email, sms, âm thanh, slack …) và triển khai theo mô hình phân tán.
-- **Checkmk** là một phần của **OMD**
-- Trang chủ : https://omdistro.org/
+- Trang chủ OMD : https://omdistro.org/
 
     <p align=center><img src=https://i.imgur.com/maEveIt.png width=70%></p>
+
+- **Checkmk** là một phần của **OMD** 
+- Trang chủ **Checkmk** : https://checkmk.com/
+- Phiên bản mới nhất : `1.6`
 ## **2) Lịch sử hình thành của OMD - Checkmk**
 - Dự án **Check_MK** được phát triển từ năm `2008` như là một plugin của **Nagios Core**.
 - Năm `2010` dự án **OMD** (**Open Monitoring Distribution**) được khởi động bởi **Mathias Kettner**, là sự kết hợp của **Nagios**, **Check_MK**, **NagVis**, **PNP4Nagios**, **DocuWiki**, ... tạo nên sự linh hoạt trong giám sát. Các distro của **OMD** hiện tại đang là **OMD-LABS** và **CHECK_MK RAW**. Trong đó :

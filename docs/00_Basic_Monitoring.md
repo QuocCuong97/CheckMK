@@ -60,7 +60,7 @@
 - Tuy nhiên, mối tương quan giữa **host** và các **service** không xảy ra trực tiếp mà là thông qua các **contact groups** . Theo cách này, user , cũng như các **host** và **service** có thể được gán cho nhiều **contact group** .
 - User `cmkadmin` - được tạo tự động khi tạo site, luôn được quyền xem các **host** và các **service** ngay cả khi nó không phải là một **contact** . Bởi `cmkadmin` là **administrator** .
 ## **5) User và Roles**
-- Các đặc quyền của các **user** được kiểm soát thông qua các **roles** . Mỗi **role** xác định một loạt các đặc quyền có thể tùy chỉnh :
+- Các đặc quyền của các **users** được kiểm soát thông qua các **roles** . Mỗi **role** xác định một loạt các đặc quyền có thể tùy chỉnh :
 
     | Role | Ý nghĩa |
     |------|---------|

@@ -37,8 +37,9 @@
 ### **2.2) Parents**
 ### **2.3) Services**
 - Một **Host** có thể có rất nhiều dịch vụ . Dịch vụ có thể là bất cứ thứ gì .
-- Trạng thái của dịch vụ chỉ có thể được xác định khi trạng thái của **Host** là `UP` .
+- Trạng thái của dịch vụ chỉ có thể được xác định khi trạng thái của **Host** là <img src=https://i.imgur.com/S0G4U21.png width=4%> .
 - Một dịch vụ được giám sát có thể có các trạng thái sau :
+
     | Trạng thái | Màu | Ý nghĩa |
     |------------|-----|---------|
     | <img src=https://i.imgur.com/sFZE2Dd.png width=20%> | Xanh lá | Dịch vụ hoàn toàn hoạt động . Tất cả các giá trị nằm trong phạm vi cho phép |
@@ -46,3 +47,24 @@
     | <img src=https://i.imgur.com/ODD3c6K.png width=30%> | Đỏ | Dịch vụ bị fail |
     | <img src=https://i.imgur.com/cQQuMJ2.png width=55%> | Da cam | Tình trạng của dịch vụ không thể được xác định chính xác . Agent cung cấp dữ liệu bị lỗi hoặc phần tử bị theo dõi đã mất |
     | <img src=https://i.imgur.com/nMRD7yJ.png width=30%> | Xám | Dịch vụ mới được thêm vào và chưa có dữ liệu giám sát |
+
+- Khi cần phải quyết định trạng thái nào tệ hơn , **Checkmk** sẽ theo thứ tự sau :
+    ```
+    OK -> WARN -> UNKNOWN -> CRIT
+    ```
+## **3) Host Group và Service Group**
+- Các **host** và các **service** có thể được nhóm lại để có được cái nhìn tổng quan hơn . Theo cách này, một **host/service** có thể ở nhiều nhóm . Các nhóm này hoàn toàn là tùy chọn, không bắt buộc .
+## **4) Contacts và Contact Groups**
+- **Contact** và **Contact Groups** cung cấp khả năng gán user cho các **host** và **service** .
+- Một **contact** có thể là 1 người dùng hoặc 1 giao diện web .
+- Tuy nhiên, mối tương quan giữa **host** và các **service** không xảy ra trực tiếp mà là thông qua các **contact groups** . Theo cách này, user , cũng như các **host** và **service** có thể được gán cho nhiều **contact group** .
+- User `cmkadmin` - được tạo tự động khi tạo site, luôn được quyền xem các **host** và các **service** ngay cả khi nó không phải là một **contact** . Bởi `cmkadmin` là **administrator** .
+## **5) User và Roles**
+- Các đặc quyền của các **user** được kiểm soát thông qua các **roles** . Mỗi **role** xác định một loạt các đặc quyền có thể tùy chỉnh :
+
+    | Role | Ý nghĩa |
+    |------|---------|
+    | `admin` | Có thể xem tất cả, có tất cả các quyền |
+    | `user` | Chỉ có thể xem như một **contact** . Có thể quản lý **host** trong các thư mục được gán cho họ . Không được phép thay đổi các cài đặt global |
+    | `guest` | Có thể xem tất cả, nhưng không thể cấu hình bất cứ gì |
+

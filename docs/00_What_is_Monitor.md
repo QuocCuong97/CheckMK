@@ -20,16 +20,6 @@
     - Một cụm máy chủ
     - Một máy ảo
     - Một Docker container
-
-<div class=".text-white on .bg-red">DOWN</div>
-
-<div class="text-purple">
-  This text is purple, <a href="#" class="text-inherit">including the link</a>
-</div>
-
-
-
-- ![#0b3](https://placehold.it/40x20/0b3/100000000?text=Blue)
-- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)
-- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+)
+    
+<span style="color:blue">some *This is Blue italic.* text</span>
 

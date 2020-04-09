@@ -21,3 +21,28 @@
     - Một máy ảo
     - Một Docker container
 - Một Host luôn có 1 trong các trạng thái sau :
+    | Trạng thái | Màu | Ý nghĩa |
+    |------------|-----|---------|
+    | <img src=https://i.imgur.com/S0G4U21.png width=20%> | Xanh lá | Host có thể truy cập qua mạng, đồng nghĩa với việc nó phản hồi PING |
+    | <img src=https://i.imgur.com/9vHj3Cx.png width=35%> | Đỏ | Host không trả lời các truy vấn qua mạng, không thể truy cập |
+    | <img src=https://i.imgur.com/ZEO46Nz.png width=50%> | Da cam | Đường dẫn đến máy chủ bị chặn, do định tuyến bị lỗi |
+    | <img src=https://i.imgur.com/nMRD7yJ.png width=30%> | Xám | ???
+
+- Đi cùng các trạng thái, một Host có các thuộc tính sau có thể được cấu hình bởi User :
+    - Tên Host (duy nhất)
+    - Địa chỉ IP
+    - Tên phụ (tùy chọn)
+    - Một hoặc nhiều **parents** (tùy chọn)
+    - ...
+### **2.2) Parents**
+### **2.3) Services**
+- Một **Host** có thể có rất nhiều dịch vụ . Dịch vụ có thể là bất cứ thứ gì .
+- Trạng thái của dịch vụ chỉ có thể được xác định khi trạng thái của **Host** là `UP` .
+- Một dịch vụ được giám sát có thể có các trạng thái sau :
+    | Trạng thái | Màu | Ý nghĩa |
+    |------------|-----|---------|
+    | <img src=https://i.imgur.com/sFZE2Dd.png width=25%> | Xanh lá | Dịch vụ hoàn toàn hoạt động . Tất cả các giá trị nằm trong phạm vi cho phép |
+    | <img src=https://i.imgur.com/ynbEuxo.png width=35%> | Vàng | 
+    | <img src=https://i.imgur.com/ODD3c6K.png width=30%> | Đỏ | Dịch vụ bị fail |
+    | <img src=https://i.imgur.com/cQQuMJ2.png width=55%> | Da cam | Đường dẫn đến máy chủ bị chặn, do định tuyến bị lỗi |
+    | <img src=https://i.imgur.com/nMRD7yJ.png width=30%> | Xám | ??? |
